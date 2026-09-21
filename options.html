@@ -1,0 +1,10 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ダウンロード・チャイム</title><link rel="stylesheet" href="options.css"></head><body><main>
+<header><img src="icons/128.png" width="52" height="52" alt=""><div><p class="eyebrow">DOWNLOAD CHIME</p><h1>ダウンロード・チャイム</h1></div></header>
+<p class="intro">完了のお知らせを、ちょうどいい音で。</p><form id="settings">
+<label class="row"><span>お知らせを有効にする</span><input id="enabled" type="checkbox"></label>
+<section><h2>お知らせの音</h2><label for="mode">通知方法</label><select id="mode"><option value="sound">チャイム</option><option value="speech">日本語で読み上げ</option><option value="silent">音なし</option></select>
+<label class="volume" for="volume">音量 <output id="volumeValue">60%</output></label><input id="volume" type="range" min="0" max="1" step="0.05">
+<div id="speechFields" hidden><label for="successText">完了したとき</label><input id="successText" type="text" maxlength="200" required><label for="failureText">失敗したとき</label><input id="failureText" type="text" maxlength="200" required><p class="hint">端末内の日本語音声を使います。</p></div></section>
+<section><h2>通知の設定</h2><label class="row"><span>画面にも通知を表示する<small>ファイル名を表示します</small></span><input id="notification" type="checkbox"></label><label class="row"><span>失敗・中断したときも知らせる</span><input id="failures" type="checkbox"></label></section>
+<div class="buttons"><button type="submit">設定を保存</button><button type="button" id="test">完了音を試す</button><button type="button" id="testFailure">失敗音を試す</button></div><p id="status" role="status" aria-live="polite"></p></form>
+<footer>設定はこの端末に保存。外部へのデータ送信はありません。<br>Chromeを起動している間、ダウンロードの状態を確認します。</footer></main><script src="options.js"></script></body></html>
