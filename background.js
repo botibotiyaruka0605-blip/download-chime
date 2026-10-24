@@ -1,3 +1,4 @@
+// 作成者：boban
 const DEFAULTS = {enabled:true, mode:'sound', volume:0.6, notification:true, failures:true, successText:'ダウンロードが完了しました', failureText:'ダウンロードに失敗しました'};
 let creating;
 async function ensureAudio() {

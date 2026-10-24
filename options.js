@@ -1,3 +1,4 @@
+// 作成者：boban
 const defaults={enabled:true,mode:'sound',volume:0.6,notification:true,failures:true,successText:'ダウンロードが完了しました',failureText:'ダウンロードに失敗しました'};
 const $=id=>document.getElementById(id);
 function update(){ $('volumeValue').textContent=Math.round(Number($('volume').value)*100)+'%';$('speechFields').hidden=$('mode').value!=='speech'; }

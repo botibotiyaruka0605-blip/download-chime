@@ -1,3 +1,4 @@
+// 作成者：boban
 const audio = new Audio();
 let queue = Promise.resolve();
 async function play(message) {

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ダウンロード・チャイム",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minimum_chrome_version": "116",
   "description": "ダウンロードの完了・失敗を音や日本語の読み上げでお知らせします。",
   "permissions": [
@@ -28,5 +28,6 @@
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'; media-src 'self'"
-  }
+  },
+  "author": "boban"
 }
